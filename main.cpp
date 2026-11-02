@@ -63,14 +63,5 @@ while (!tollLane.empty()) {
     }
 }
 
-    // exercise deque methods
-    cout << "\nNumber of cars: " << tollLane.size() << endl;
-
-    cout << "First car:" << endl;
-    tollLane.front().print();
-
-    cout << "Last car:" << endl;
-    tollLane.back().print();
-
     return 0;
 }
