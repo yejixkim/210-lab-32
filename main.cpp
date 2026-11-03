@@ -23,17 +23,15 @@ for (int lane = 0; lane < NUM_LANES; lane++) {
     }
 }
 
-// test the array of deques
+// display the initial queue
+cout << "Initial queue:" << endl;
+
 for (int lane = 0; lane < NUM_LANES; lane++) {
     cout << "Lane " << lane + 1 << ":" << endl;
 
-    cout << "Number of cars: " << tollLanes[lane].size() << endl;
-
-    cout << "First car: ";
-    tollLanes[lane].front().print();
-
-    cout << "Last car: ";
-    tollLanes[lane].back().print();
+    for (Car& car : tollLanes[lane]) {
+        car.print();
+    }
 }
 
 return 0;
